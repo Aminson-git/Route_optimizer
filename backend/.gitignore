@@ -1,0 +1,79 @@
+# Ignore build output for Maven
+target/
+# Exclude the Maven wrapper JAR but keep the wrapper scripts
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS (Spring Tools Suite) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Operating System Specific ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+*.swp
+
+### Node.js / Frontend ###
+# Node.js dependencies
+node_modules/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build output for frontend (React)
+build/
+dist/
+
+# .env files (if used for environment-specific configuration)
+.env
+.env.* 
+
+# Ignore IDE specific files for editors (like Sublime Text, etc.)
+*.sublime-workspace
+*.sublime-project
+
+### Log files ###
+*.log
+
+### Package distribution
+*.tgz
+*.tar.gz
+
+# Ignore the "Help" markdown file if you don't want to include it
+HELP.md
