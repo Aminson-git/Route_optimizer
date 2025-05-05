@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.routeoptimizer.model.Country;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,7 +45,7 @@ public class CountryService {
     
     public List<Country> getCountriesByCodes(List<String> codes) {
         return codes.stream()
-                .map(this::getCountryByCode)
+        .map(code -> this.getCountryByCode(code))
                 .collect(Collectors.toList());
     }
 }
