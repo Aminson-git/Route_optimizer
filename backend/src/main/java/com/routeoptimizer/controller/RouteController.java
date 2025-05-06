@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*") // For development; restrict in production
+@CrossOrigin(origins = "*", allowCredentials = "false") 
 public class RouteController {
     
     private final CountryService countryService;
